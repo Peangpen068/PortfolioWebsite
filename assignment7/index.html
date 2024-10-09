@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<nav>
+			<ul class="menu">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../project.html">Projects</a></li>
+				<!-- เมนู Assignment ที่มีหัวข้อย่อย 5 หัวข้อ -->
+				<li class="dropdown">
+					<a href="#">Assignment</a> <!-- ลิงก์หลักของ Assignment -->
+					<ul class="dropdown-content"> <!-- เมนูย่อยของ Assignment -->
+						<p><a href="../assignment3/recipe.html">Cinnamon Roll</a></p>
+						<p><a href="../assignment4/recipe.html">Pizza dip</a></p>
+						<p><a href="../assignment5/index.html">Blog</a></p>
+						<p><a href="../assignment6/register.html">Register&login</a></p>
+						<p><a href="../assignment7/index.html">Square game</a></p>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<meta charset="UTF-8">
+		<title>Square game</title>
+		<script type="text/javascript" src="game.js"></script>
+		<link rel="stylesheet" type="text/css" href="game.css">
+	</head>
+	<body>
+		<!-- these codes were adapted from https://courses.cs.washington.edu/courses/cse154/17sp/lecture/more-dom/code/squares.html  -->
+
+		<fieldset>
+			<legend>Control</legend>
+			Number of box: 
+			<input type="text" name="numbox" id="numbox">
+			<select name="color" id = "color">
+				<option value="maroon">Maroon</option>
+				<option value="lightgreen">Lightgreen</option>
+				<option value="magenta">Magenta</option>
+			</select>
+			<button id="start">Start</button>
+			<div id="timerClock"> Timer:
+				<div id="clock"></div>
+			</div>
+		</fieldset>
+
+		
+		
+
+		<div id="container">
+			<div id="layer"></div>
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,155 @@
+/* กำหนดรูปแบบ Header */
+header {
+    background-color: #FFB6C1; /* สีพื้นหลังชมพูพาสเทล */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* รูปแบบเมนูหลัก */
+nav ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* จัดเมนูให้อยู่ตรงกลาง */
+}
+
+/* รูปแบบของลิงก์ในเมนู */
+nav ul.menu li {
+    margin: 0 15px; /* ระยะห่างระหว่างเมนู */
+    position: relative; /* กำหนด position สำหรับเมนูย่อย */
+}
+
+nav ul.menu li a {
+    color: white; /* สีตัวอักษร */
+    text-decoration: none; /* ลบเส้นใต้ */
+    font-size: 30px;
+    padding: 8px 16px;
+    background-color: #FFC0CB; /* สีพื้นหลังชมพูอ่อน */
+    border-radius: 5px; /* มุมโค้ง */
+    transition: background-color 0.3s;
+}
+
+/* เปลี่ยนสีพื้นหลังเมื่อ hover บนลิงก์หลัก */
+nav ul.menu li a:hover {
+    background-color: #FF69B4; /* สีพื้นหลังชมพูเข้มเมื่อ hover */
+}
+
+/* รูปแบบเมนูย่อย (Dropdown Menu) */
+nav ul.menu li ul.dropdown-content {
+    display: none; /* ซ่อนเมนูย่อย */
+    position: absolute; /* วางตำแหน่ง */
+    background-color: #FFD1DC; /* สีพื้นหลังของเมนูย่อย */
+    min-width: 250px; /* กำหนดความกว้างขั้นต่ำ */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* เงารอบเมนูย่อย */
+    z-index: 1;
+    border-radius: 5px; /* มุมโค้งของเมนูย่อย */
+    top: 100%; /* แสดงเมนูย่อยใต้เมนูหลัก */
+    left: 0; /* กำหนดให้ชิดซ้ายตรงกับเมนูหลัก */
+    text-align: left; /* จัดข้อความชิดซ้าย */
+}
+
+
+/* รูปแบบลิงก์ภายในเมนูย่อย */
+nav ul.menu li ul.dropdown-content li {
+    padding: 12px 16px;
+}
+
+nav ul.menu li ul.dropdown-content li a {
+    color: #333; /* สีตัวอักษรเมนูย่อย */
+    text-align: left; /* จัดข้อความในลิงก์ชิดซ้าย */
+}
+
+/* เปลี่ยนสีพื้นหลังเมื่อ hover บนลิงก์เมนูย่อย */
+nav ul.menu li ul.dropdown-content li a:hover {
+    background-color: #FFB6C1; /* สีพื้นหลังของเมนูย่อยเมื่อ hover */
+}
+
+/* แสดงเมนูย่อยเมื่อ hover ที่เมนูหลัก */
+nav ul.menu li:hover ul.dropdown-content {
+    display: block;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* รูปแบบของ body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF0F5; /* สีพื้นหลังชมพูอ่อน */
+    color: #333;
+    margin: 0;
+    background-image: url("pic/tumblr_6a09151caec504bd64714094c14f750c_f0fc5203_640.gif");
+    background-size: cover;
+}
+
+/* กำหนดรูปแบบของ h1, h2, h3 */
+h1, h2, h3 {
+    color: #FF69B4; /* สีชมพูเข้ม */
+    text-shadow: 1px 1px 2px #FFB6C1;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/* กำหนดรูปแบบของ li */
+li {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* กำหนดรูปแบบของ img */
+img {
+    width: 400px;
+    border: 50%;
+    margin: 20px 0;
+    border: 5px solid #FFC0CB; /* เส้นขอบรอบรูปภาพ */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* เงารอบรูปภาพ */
+}
+
+
+/* กำหนดลิงก์ในเนื้อหา */
+a {
+    color: #FF69B4; /* สีลิงก์ */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 20px;
+    
+}
+
+/* รูปแบบของ div ที่ใช้จัดกลาง */
+div {
+    text-align: center;
+    margin: 20px;
+}
+
+/* เส้นแบ่ง */
+hr {
+    border: 1px solid #FFB6C1;
+    width: 80%;
+}
+
+
+
+

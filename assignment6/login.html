@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<nav>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../project.html">Projects</a></li>
+			<!-- เมนู Assignment ที่มีหัวข้อย่อย 5 หัวข้อ -->
+			<li class="dropdown">
+				<a href="#">Assignment</a> <!-- ลิงก์หลักของ Assignment -->
+				<ul class="dropdown-content"> <!-- เมนูย่อยของ Assignment -->
+					<p><a href="../assignment3/recipe.html">Cinnamon Roll</a></p>
+					<p><a href="../assignment4/recipe.html">Pizza dip</a></p>
+					<p><a href="../assignment5/index.html">Blog</a></p>
+					<p><a href="../assignment6/register.html">Register&login</a></p>
+					<p><a href="../assignment7/index.html">Square game</a></p>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Login</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src='login.js'></script>
+</head>
+<body>
+	<form name="myLogin" id="myLogin">
+		<fieldset>
+			<legend>Login</legend>
+			Username: 
+			<input type="text" name="username" id="loginUsername" required>
+			<br>
+			Password: 
+			<input type="password" name="password" id="loginPassword" required>
+			<br>
+			<input type="submit" value="Login">
+			<input type="reset" value="Clear">
+		</fieldset>
+	</form>
+
+	<div id="loginResult"></div>
+
+	<script src="login.js"></script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page Title</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src='login.js'></script>
+</head>
+<body>
+	<form name="myLogin" id = "myLogin">
+		<fieldset>
+			<legend>Login</legend>
+			Username: 
+			<input type="text" name="username" id="username" required>
+			<br>
+			Password: 
+			<input type="password" name="password" required>
+			<br>
+			<input type="submit" value="Login">
+			<input type="reset" value="Clear">
+		</fieldset>
+	</form>
+</body>
+</html> 
+ -->

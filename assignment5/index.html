@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <nav>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../project.html">Projects</a></li>
+			<!-- เมนู Assignment ที่มีหัวข้อย่อย 5 หัวข้อ -->
+			<li class="dropdown">
+				<a href="#">Assignment</a> <!-- ลิงก์หลักของ Assignment -->
+				<ul class="dropdown-content"> <!-- เมนูย่อยของ Assignment -->
+					<p><a href="../assignment3/recipe.html">Cinnamon Roll</a></p>
+					<p><a href="../assignment4/recipe.html">Pizza dip</a></p>
+					<p><a href="../assignment5/index.html">Blog</a></p>
+					<p><a href="../assignment6/register.html">Register&login</a></p>
+					<p><a href="../assignment7/index.html">Square game</a></p>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Blogger</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Forum</h1>
+    </header>
+	<br>
+	<div class="rotate-SunF">
+		<img src="pic/sunflower-logo-E27FFD8053-seeklogo.com.png" alt="Sunflower">
+	</div>
+	<br>
+    <section id="content">
+        <div id="topic"></div>
+        <div id="reply1"></div>
+        <div id="reply2"></div>
+    </section>
+	<br>
+	<div>
+		<img id="Sunf_Line" src="pic/image-removebg-preview (1).png" alt="SunfLie" />
+	</div>
+	<br>
+		
+    <section id="form">
+        <textarea name="message" id="message"></textarea>
+        <br/>
+        <button onclick="post()">Post</button>
+        <button onclick="clearAllPosts()">Clear</button>
+    </section>
+	<br>
+	<hr>
+	<br>
+	<div>
+		<img id="otter_pic" src="pic/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="otter" />
+	</div>
+		
+	
+</body>
+</html>

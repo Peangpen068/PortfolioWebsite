@@ -1,0 +1,162 @@
+/* กำหนดรูปแบบ Header */
+header {
+  background-color: #FFB6C1; /* สีพื้นหลังชมพูพาสเทล */
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* รูปแบบเมนูหลัก */
+nav ul.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* จัดเมนูให้อยู่ตรงกลาง */
+}
+
+/* รูปแบบของลิงก์ในเมนู */
+nav ul.menu li {
+  margin: 0 15px; /* ระยะห่างระหว่างเมนู */
+  position: relative; /* กำหนด position สำหรับเมนูย่อย */
+}
+
+nav ul.menu li a {
+  color: white; /* สีตัวอักษร */
+  text-decoration: none; /* ลบเส้นใต้ */
+  font-size: 30px;
+  padding: 8px 16px;
+  background-color: #FFC0CB; /* สีพื้นหลังชมพูอ่อน */
+  border-radius: 5px; /* มุมโค้ง */
+  transition: background-color 0.3s;
+}
+
+/* เปลี่ยนสีพื้นหลังเมื่อ hover บนลิงก์หลัก */
+nav ul.menu li a:hover {
+  background-color: #FF69B4; /* สีพื้นหลังชมพูเข้มเมื่อ hover */
+}
+
+/* รูปแบบเมนูย่อย (Dropdown Menu) */
+nav ul.menu li ul.dropdown-content {
+  display: none; /* ซ่อนเมนูย่อย */
+  position: absolute; /* วางตำแหน่ง */
+  background-color: #FFD1DC; /* สีพื้นหลังของเมนูย่อย */
+  min-width: 250px; /* กำหนดความกว้างขั้นต่ำ */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* เงารอบเมนูย่อย */
+  z-index: 1;
+  border-radius: 5px; /* มุมโค้งของเมนูย่อย */
+  top: 100%; /* แสดงเมนูย่อยใต้เมนูหลัก */
+  left: 0; /* กำหนดให้ชิดซ้ายตรงกับเมนูหลัก */
+  text-align: left; /* จัดข้อความชิดซ้าย */
+}
+
+
+/* รูปแบบลิงก์ภายในเมนูย่อย */
+nav ul.menu li ul.dropdown-content li {
+  padding: 12px 16px;
+}
+
+nav ul.menu li ul.dropdown-content li a {
+  color: #333; /* สีตัวอักษรเมนูย่อย */
+}
+
+/* เปลี่ยนสีพื้นหลังเมื่อ hover บนลิงก์เมนูย่อย */
+nav ul.menu li ul.dropdown-content li a:hover {
+  background-color: #FFB6C1; /* สีพื้นหลังของเมนูย่อยเมื่อ hover */
+}
+
+/* แสดงเมนูย่อยเมื่อ hover ที่เมนูหลัก */
+nav ul.menu li:hover ul.dropdown-content {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f0; 
+    color: #333; 
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+
+  form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    border: 2px solid #ffccde; 
+  }
+  
+  
+  input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 24px);
+    border: 1px solid #ffccde;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* ปุ่ม */
+  input[type="submit"], input[type="reset"], button {
+    background-color: #ff99c8; 
+    color: white;
+    padding: 10px;
+    width: calc(100% - 24px);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    background-color: #ff80b3; /* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง */
+  }
+  
+  
+  #errormsg {
+    color: #ff4d6d; 
+    font-size: 14px;
+  }
+  
+ 
+  #registerResult, #loginResult {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff4d6d; 
+  }
+  
+ 
+  legend {
+    font-size: 20px;
+    color: #ff66a3; /* สีหัวข้อฟอร์ม */
+  }
+  
+  fieldset {
+    border: 2px solid #ffccde;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* ปุ่มเลือกเพศ */
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .gender-options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  
+  .gender-options label {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
